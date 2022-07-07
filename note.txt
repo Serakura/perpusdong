@@ -1,0 +1,25 @@
+Petugas
+1. List Rak:
+    CRUT
+2. List Buku:
+    Read->Done
+    CRUT
+3. List Anggota:
+    CRUT
+    Bisa Approve/Not
+4. List Peminjaman:
+    CRUT
+5. List Pengembalian:
+    CRUT
+    Approve
+6. 
+
+Auth
+1. Login
+    Anggota -> DONE
+2. Daftar 
+    DONE
+
+
+Tambah Gambar
+https://codesource.io/complete-laravel-8-image-upload-tutorial-with-example/
