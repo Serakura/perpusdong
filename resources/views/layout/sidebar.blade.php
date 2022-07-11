@@ -42,19 +42,28 @@
     <hr class="sidebar-divider my-0">
     
     <li class="nav-item">
-        <a class="nav-link" href="index.php?page=kelas">
+        <a class="nav-link" href="/petugas/list-anggota">
             <i class="fas fa-fw fa-home"></i>
-            <span>Kelas</span></a>
+            <span>Anggota</span></a>
     </li>
     <hr class="sidebar-divider my-0">
 
-    <!-- Nav Item - Charts -->
+    <li class="nav-item">
+        <a class="nav-link" href="/petugas/list-pinjam">
+            <i class="fas fa-fw fa-user-tie"></i>
+            <span>Peminjaman</span></a>
+    </li>
+
+    <hr class="sidebar-divider my-0">
 
     <li class="nav-item">
-        <a class="nav-link" href="index.php?page=mapel">
-            <i class="fas fa-fw fa-book"></i>
-            <span>Mata Pelajaran</span></a>
+        {{-- bikin if disini --}}
+        <a class="nav-link" href="/petugas/list-balik">
+            <i class="fas fa-fw fa-user"></i>
+            <span>Pengembalian</span></a>
     </li>
+
+
     <hr class="sidebar-divider my-0">
 
 

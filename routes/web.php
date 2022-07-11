@@ -38,3 +38,12 @@ Route::get('/petugas/list-buku', [ListBukuController::class, 'index']);
 Route::get('/petugas/list-rak', function () {
     return view('content.petugas.list-rak');
 });
+Route::get('/petugas/list-anggota', function () {
+    return view('content.petugas.list-anggota');
+});
+Route::get('/petugas/list-pinjam', function () {
+    return view('content.petugas.list-pinjam');
+});
+Route::get('/petugas/list-balik', function () {
+    return view('content.petugas.list-balik');
+});
