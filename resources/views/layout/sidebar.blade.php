@@ -12,7 +12,17 @@
 
     <!-- Divider -->
     <hr class="sidebar-divider my-0">
-
+    <?php
+    if (session()->has('isAnggota')) { 
+        ?>
+        <li class="nav-item px-3 d-none d-md-block">
+            
+                <img src="https://cdn0-production-images-kly.akamaized.net/10pYJTQfy8oxHSgSGmvpgDCAGic=/1200x1200/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2832638/original/037807400_1560947825-20190619-Anya-Geraldine-1.jpg" class="img-thumbnail profile rounded-circle" alt="">
+                
+           
+        </li>
+        <?php } ?>
+        <hr class="sidebar-divider my-0">
     <li class=" nav-item">
         <a class="nav-link" href="/">
             <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -73,5 +83,30 @@
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
     </div>
 <?php } ?>
+<?php
+    if (session()->has('isAnggota')) { 
+        ?>
+        
+<li class="nav-item">
+    {{-- bikin if disini --}}
+    <a class="nav-link" href="/anggota/list-buku">
+        <i class="fas fa-fw fa-user"></i>
+        <span>Buku</span></a>
+</li>
+<hr class="sidebar-divider my-0">
 
+    <li class="nav-item">
+        <a class="nav-link" href="/anggota/list-pinjam">
+            <i class="fas fa-fw fa-user-tie"></i>
+            <span>List Pinjam</span></a>
+    </li>
+    <hr class="sidebar-divider my-0">
+
+    <li class="nav-item">
+        <a class="nav-link" href="/anggota/list-riwayat">
+            <i class="fas fa-fw fa-user-tie"></i>
+            <span>Riwayat</span></a>
+    </li>
+        <?php 
+        } ?>
 </ul>

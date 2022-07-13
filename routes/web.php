@@ -47,3 +47,15 @@ Route::get('/petugas/list-pinjam', function () {
 Route::get('/petugas/list-balik', function () {
     return view('content.petugas.list-balik');
 });
+
+Route::get('/anggota/list-buku', function () {
+    return view('content.anggota.list-buku');
+});
+
+Route::get('/anggota/list-pinjam', function () {
+    return view('content.anggota.list-pinjam');
+});
+
+Route::get('/anggota/list-riwayat', function () {
+    return view('content.anggota.list-riwayat');
+});
